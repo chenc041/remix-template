@@ -1,4 +1,5 @@
-# Welcome to Remix!
+# Remix app template
+> A remix app template with scss
 
 - [Remix Docs](https://remix.run/docs)
 
