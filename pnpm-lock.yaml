@@ -10,6 +10,7 @@ specifiers:
   '@types/react-dom': ^18.0.11
   cross-env: ^7.0.3
   eslint: ^8.36.0
+  isbot: latest
   npm-run-all: ^4.1.5
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -21,6 +22,7 @@ dependencies:
   '@remix-run/node': 1.14.3
   '@remix-run/react': 1.14.3_biqbaboplfbrettd7655fr4n2y
   '@remix-run/serve': 1.14.3
+  isbot: 3.6.7
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -4972,6 +4974,11 @@ packages:
   /isarray/2.0.5:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
     dev: true
+
+  /isbot/3.6.7:
+    resolution: {integrity: sha512-SXNUQaNZlj/+9jdrGnAp6WW0YoHe3MIwwc6oRIYuhhERBUt7/L6I7JkMiA2sX9fcvS7gZ2C7GWgmDZfOOU4I5g==}
+    engines: {node: '>=12'}
+    dev: false
 
   /isexe/2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
