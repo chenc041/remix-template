@@ -6,8 +6,9 @@ settings:
 
 dependencies:
   '@remix-run/node':
-    specifier: ^2.0.0
-    version: 2.0.1(typescript@4.9.5)
+
+    specifier: ^2.0.
+    version: 2.0.1(typescript@5.2.2)
   '@remix-run/react':
     specifier: ^2.0.0
     version: 2.0.1(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)
@@ -26,8 +27,9 @@ dependencies:
 
 devDependencies:
   '@remix-run/dev':
-    specifier: ^2.0.0
-    version: 2.0.1(@remix-run/serve@2.0.1)(sass@1.59.3)(typescript@4.9.5)
+
+    version: 2.0.1(@remix-run/serve@2.0.1)(sass@1.68.0)(typescript@5.2.2)
+
   '@remix-run/eslint-config':
     specifier: ^2.0.0
     version: 2.0.1(eslint@8.50.0)(react@18.2.0)(typescript@4.9.5)
@@ -35,8 +37,8 @@ devDependencies:
     specifier: ^18.2.22
     version: 18.2.22
   '@types/react-dom':
-    specifier: ^18.0.11
-    version: 18.0.11
+    specifier: ^18.2.7
+    version: 18.2.7
   cross-env:
     specifier: ^7.0.3
     version: 7.0.3
@@ -712,6 +714,17 @@ packages:
 
   /@esbuild/netbsd-x64@0.17.6:
     resolution: {integrity: sha512-EanJqcU/4uZIBreTrnbnre2DXgXSa+Gjap7ifRfllpmyAU7YMvaXmljdArptTHmjrkkKm9BK6GH5D5Yo+p6y5A==}
+
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [netbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/openbsd-x64@0.17.6:
+    resolution: {integrity: sha512-xaxeSunhQRsTNGFanoOkkLtnmMn5QbA0qBhNet/XLVsc+OVkpIWPHcr3zTW2gxVU5YOHFbIHR9ODuaUdNza2Vw==}
+
     engines: {node: '>=12'}
     cpu: [x64]
     os: [netbsd]
@@ -727,6 +740,7 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
   /@esbuild/sunos-x64@0.17.6:
     resolution: {integrity: sha512-gnMnMPg5pfMkZvhHee21KbKdc6W3GR8/JuE0Da1kjwpK6oiFU3nqfHuVPgUX2rsOx9N2SadSQTIYV1CIjYG+xw==}
     engines: {node: '>=12'}
@@ -995,6 +1009,7 @@ packages:
       tslib: 2.5.0
     dev: true
 
+
   /@remix-run/dev@2.0.1(@remix-run/serve@2.0.1)(sass@1.68.0)(typescript@5.2.2):
     resolution: {integrity: sha512-FxlbgCBXUzKxBSs2OfNoBUadcARr4S7S4JQ28t7MLcIsfJI/uHmGAMXClatsgeZuRvPK/Zx/W3B4uho1FTfQVA==}
     engines: {node: '>=18.0.0'}
@@ -1074,8 +1089,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@remix-run/eslint-config@2.0.1(eslint@8.50.0)(react@18.2.0)(typescript@4.9.5):
 
+  /@remix-run/eslint-config@2.0.1(eslint@8.36.0)(react@18.2.0)(typescript@5.2.2):
     resolution: {integrity: sha512-XIKnID45O60Vtegsib2qJOVYBCq2VRn+3qaEAX1NtgcQDI1xD7o3k1k3MCdQqaGD9/XmcbJumkmuAIX3Ti6/mA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -1192,7 +1207,9 @@ packages:
       - supports-color
       - typescript
 
+
   /@remix-run/server-runtime@2.0.1(typescript@5.2.2):
+
     resolution: {integrity: sha512-xCW2aw9EILx7F3orEHN2fcpEkNzZTRU8VzP7gS9pmHP45qteFqsY5Qg2/dnF17royWmeeBNhnXaJOgb76W1KEA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -1334,8 +1351,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom@18.0.11:
-    resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
+  /@types/react-dom@18.2.7:
+    resolution: {integrity: sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==}
     dependencies:
       '@types/react': 18.2.22
     dev: true
@@ -5345,6 +5362,7 @@ packages:
     dependencies:
 
       glob: 10.3.7
+
     dev: true
 
   /rollup@3.19.1:
