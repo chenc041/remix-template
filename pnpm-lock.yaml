@@ -27,9 +27,10 @@ dependencies:
 devDependencies:
   '@remix-run/dev':
     specifier: ^2.0.0
-    version: 2.0.1(@remix-run/serve@2.0.1)(sass@1.59.3)(typescript@5.2.2)
+    version: 2.0.1(@remix-run/serve@2.0.1)(sass@1.68.0)(typescript@5.2.2)
   '@remix-run/eslint-config':
     specifier: ^2.0.0
+    version: 2.0.1(eslint@8.36.0)(react@18.2.0)(typescript@5.2.2)
   '@types/react':
     specifier: ^18.2.22
     version: 18.2.22
@@ -46,12 +47,11 @@ devDependencies:
     specifier: ^4.1.5
     version: 4.1.5
   rimraf:
-    specifier: ^4.4.0
-    version: 4.4.0
+    specifier: ^5.0.1
+    version: 5.0.1
   sass:
-    specifier: ^1.59.3
-    version: 1.59.3
-  typescript:
+    specifier: ^1.68.0
+    version: 1.68.0
     specifier: ^5.2.2
     version: 5.2.2
 
@@ -984,7 +984,7 @@ packages:
       tslib: 2.5.0
     dev: true
 
-  /@remix-run/dev@2.0.1(@remix-run/serve@2.0.1)(sass@1.59.3)(typescript@5.2.2):
+  /@remix-run/dev@2.0.1(@remix-run/serve@2.0.1)(sass@1.68.0)(typescript@5.2.2):
     resolution: {integrity: sha512-FxlbgCBXUzKxBSs2OfNoBUadcARr4S7S4JQ28t7MLcIsfJI/uHmGAMXClatsgeZuRvPK/Zx/W3B4uho1FTfQVA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
@@ -1009,7 +1009,7 @@ packages:
       '@remix-run/serve': 2.0.1(typescript@5.2.2)
       '@remix-run/server-runtime': 2.0.1(typescript@5.2.2)
       '@types/mdx': 2.0.7
-      '@vanilla-extract/integration': 6.2.1(sass@1.59.3)
+      '@vanilla-extract/integration': 6.2.1(sass@1.68.0)
       arg: 5.0.2
       cacache: 17.1.4
       chalk: 4.1.2
@@ -1492,7 +1492,7 @@ packages:
       outdent: 0.8.0
     dev: true
 
-  /@vanilla-extract/integration@6.2.1(sass@1.59.3):
+  /@vanilla-extract/integration@6.2.1(sass@1.68.0):
     resolution: {integrity: sha512-+xYJz07G7TFAMZGrOqArOsURG+xcYvqctujEkANjw2McCBvGEK505RxQqOuNiA9Mi9hgGdNp2JedSa94f3eoLg==}
     dependencies:
       '@babel/core': 7.22.5
@@ -1506,8 +1506,8 @@ packages:
       lodash: 4.17.21
       mlly: 1.2.0
       outdent: 0.8.0
-      vite: 4.2.0(sass@1.59.3)
-      vite-node: 0.28.5(sass@1.59.3)
+      vite: 4.2.0(sass@1.68.0)
+      vite-node: 0.28.5(sass@1.68.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3129,16 +3129,6 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  /glob@9.3.0:
-    resolution: {integrity: sha512-EAZejC7JvnQINayvB/7BJbpZpNOJ8Lrw2OZNEvQxe0vaLn1SuwMcfV7/MNaX8L/T0wmptBFI4YMtDvSBxYDc7w==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    dependencies:
-      fs.realpath: 1.0.0
-      minimatch: 7.4.2
-      minipass: 4.2.5
-      path-scurry: 1.6.1
-    dev: true
-
   /globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
@@ -4302,13 +4292,6 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
-  /minimatch@7.4.2:
-    resolution: {integrity: sha512-xy4q7wou3vUoC9k1xGTXc+awNdGaGVHtFUaey8tiX4H1QRc04DZ/rmDFwNm2EBsuYEhAZ6SgMmYf3InGY6OauA==}
-    engines: {node: '>=10'}
-    dependencies:
-      brace-expansion: 2.0.1
-    dev: true
-
   /minimatch@9.0.3:
     resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
     engines: {node: '>=16 || 14 >=14.17'}
@@ -4346,11 +4329,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       yallist: 4.0.0
-    dev: true
-
-  /minipass@4.2.5:
-    resolution: {integrity: sha512-+yQl7SX3bIT83Lhb4BVorMAHVuqsskxRdlmO9kTpyukp8vsm2Sn/fUOV9xlnG8/a5JsypJzap21lz/y3FBMJ8Q==}
-    engines: {node: '>=8'}
     dev: true
 
   /minipass@7.0.3:
@@ -4758,14 +4736,6 @@ packages:
     dependencies:
       lru-cache: 10.0.1
       minipass: 7.0.3
-    dev: true
-
-  /path-scurry@1.6.1:
-    resolution: {integrity: sha512-OW+5s+7cw6253Q4E+8qQ/u1fVvcJQCJo/VFD8pje+dbJCF1n5ZRMV2AEHbGp+5Q7jxQIYJxkHopnj6nzdGeZLA==}
-    engines: {node: '>=14'}
-    dependencies:
-      lru-cache: 7.18.3
-      minipass: 4.2.5
     dev: true
 
   /path-to-regexp@0.1.7:
@@ -5280,12 +5250,12 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rimraf@4.4.0:
-    resolution: {integrity: sha512-X36S+qpCUR0HjXlkDe4NAOhS//aHH0Z+h8Ckf2auGJk3PTnx5rLmrHkwNdbVQuCSUhOyFrlRvFEllZOYE+yZGQ==}
+  /rimraf@5.0.1:
+    resolution: {integrity: sha512-OfFZdwtd3lZ+XZzYP/6gTACubwFcHdLRqS9UX3UwpU2dnGQYkPFISRwvM3w9IiB2w7bW5qGo/uAwE4SmXXSKvg==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      glob: 9.3.0
+      glob: 10.3.7
     dev: true
 
   /rollup@3.19.1:
@@ -5326,9 +5296,9 @@ packages:
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  /sass@1.59.3:
-    resolution: {integrity: sha512-QCq98N3hX1jfTCoUAsF3eyGuXLsY7BCnCEg9qAact94Yc21npG2/mVOqoDvE0fCbWDqiM4WlcJQla0gWG2YlxQ==}
-    engines: {node: '>=12.0.0'}
+  /sass@1.68.0:
+    resolution: {integrity: sha512-Lmj9lM/fef0nQswm1J2HJcEsBUba4wgNx2fea6yJHODREoMFnwRpZydBnX/RjyXw2REIwdkbqE4hrTo4qfDBUA==}
+    engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
@@ -6039,7 +6009,7 @@ packages:
       vfile-message: 3.1.2
     dev: true
 
-  /vite-node@0.28.5(sass@1.59.3):
+  /vite-node@0.28.5(sass@1.68.0):
     resolution: {integrity: sha512-LmXb9saMGlrMZbXTvOveJKwMTBTNUH66c8rJnQ0ZPNX+myPEol64+szRzXtV5ORb0Hb/91yq+/D3oERoyAt6LA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -6051,7 +6021,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.2.0(sass@1.59.3)
+      vite: 4.2.0(sass@1.68.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6062,7 +6032,7 @@ packages:
       - terser
     dev: true
 
-  /vite@4.2.0(sass@1.59.3):
+  /vite@4.2.0(sass@1.68.0):
     resolution: {integrity: sha512-AbDTyzzwuKoRtMIRLGNxhLRuv1FpRgdIw+1y6AQG73Q5+vtecmvzKo/yk8X/vrHDpETRTx01ABijqUHIzBXi0g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6091,7 +6061,7 @@ packages:
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.19.1
-      sass: 1.59.3
+      sass: 1.68.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
