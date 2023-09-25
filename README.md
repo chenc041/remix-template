@@ -1,5 +1,5 @@
 # Remix app template
-> A remix app template with scss
+> A remix app template with scss and tailwindcss
 
 - [Remix Docs](https://remix.run/docs)
 

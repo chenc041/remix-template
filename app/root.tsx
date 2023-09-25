@@ -1,20 +1,22 @@
+import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
-  Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import globalStyle from '~/styles/global.css'
 
-export const links: LinksFunction =() => {
-  return [{
-    rel: 'stylesheet',
-    href: globalStyle
-  }]
-}
+import global from "~/styles/global.css";
+
+export const links: LinksFunction = () => [
+  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  {
+    rel: "stylesheet",
+    href: global,
+  },
+];
 
 export default function App() {
   return (
