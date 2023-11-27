@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^2.0.1
     version: 2.0.1(@remix-run/serve@2.0.1)(sass@1.69.5)(typescript@5.2.2)
   '@remix-run/eslint-config':
-    specifier: ^2.0.1
-    version: 2.0.1(eslint@8.52.0)(react@18.2.0)(typescript@5.2.2)
+    specifier: ^2.3.1
+    version: 2.3.1(eslint@8.52.0)(react@18.2.0)(typescript@5.2.2)
   '@types/react':
     specifier: ^18.2.33
     version: 18.2.33
@@ -1173,8 +1173,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@remix-run/eslint-config@2.0.1(eslint@8.52.0)(react@18.2.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-XIKnID45O60Vtegsib2qJOVYBCq2VRn+3qaEAX1NtgcQDI1xD7o3k1k3MCdQqaGD9/XmcbJumkmuAIX3Ti6/mA==}
+  /@remix-run/eslint-config@2.3.1(eslint@8.52.0)(react@18.2.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-nSPsgsEz6e3UDh2cDNq+tIoOf4yBnteuLyYGXyeOlW14oQoC4k5apfsjGAb3nphZtTNvTKP2qJhyYmje8Mr3Zw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: ^8.0.0
