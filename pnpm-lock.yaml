@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@remix-run/css-bundle':
-    specifier: ^2.0.1
-    version: 2.0.1
+    specifier: ^2.3.1
+    version: 2.3.1
   '@remix-run/node':
     specifier: ^2.0.1
     version: 2.0.1(typescript@5.2.2)
@@ -1089,8 +1089,8 @@ packages:
     dev: true
     optional: true
 
-  /@remix-run/css-bundle@2.0.1:
-    resolution: {integrity: sha512-PDAak97HvrSa6Pu84iN14o8NNitqLeyO0iH9zqWNhrsO2nFELUOzQ/02H/9QWmmIYgVpbUIQxJlp70ZEAV2dyw==}
+  /@remix-run/css-bundle@2.3.1:
+    resolution: {integrity: sha512-07d40dZz3iS/rm2xyFzmvGylJ5K6vXbb0wCnO+60JBQGlKKZGR4O4u027EmgUT32tJP/Xryf6rpnR3QTjDxozg==}
     engines: {node: '>=18.0.0'}
     dev: false
 
